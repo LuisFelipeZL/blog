@@ -1,0 +1,24 @@
+<div class="content">
+    <aside class="articles">
+        <p class="news-list-title">Noticias</p>
+        <div class="articles-container">
+            <div class="news-list" [innerHTML]="addNews">
+            </div>
+        </div>
+    </aside>
+    <section class="form">
+        <p class="form-definition">Complete el formulario para crear una nueva noticia</p>
+        <div class="form-items">
+            <label for="news-title" class="form-label">Titulo</label>
+            <input type="text" id="news-title" placeholder="" class="form-input" [(ngModel)]="n_title" required />
+            <label for="news-image" class="form-label">Imagen (url)</label>
+            <input type="url" id="news-image" class="form-input"
+                [(ngModel)]="n_image" required />
+            <label for="news-content" class="form-label">Contenido</label>
+            <textarea id="news-content" placeholder="" class="form-input" [(ngModel)]="n_content" required></textarea>
+            <label for="news-date" class="form-label">Fecha</label>
+            <input type="date" id="news-date" placeholder="" class="form-input" [(ngModel)]="n_date" required />
+            <button class="form-button" (click)="uploadNews()">Publicar</button>
+        </div>
+    </section>
+</div>

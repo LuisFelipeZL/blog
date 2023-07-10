@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin-inline:auto;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* =================================================================*/
+
+/* FORMULARIO */
+.form {
+   margin-top: 20px;
+   width: min(400px,90%);
+   margin-inline: auto;
+}
+
+.form-definition {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-input {
+    padding: 12px;
+    border-radius: 4px;
+    flex-grow: 1;
+    background-color: transparent;
+    outline: 2px solid black;
+}
+
+.form-input:focus {
+    background-color: rgb(25, 118, 210, 0.5);
+}
+
+.form-button {
+    width: 40%;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    margin-top: 8px;
+    background-color: #e2f016;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .button {
+        justify-content: space-around;
+    }
+}
+
+/* =================================================================*/
+
+/* NOTICIAS */
+.articles {
+    width: min(400px,90%);
+    margin-inline: auto;
+    margin-top: 20px;
+}
+
